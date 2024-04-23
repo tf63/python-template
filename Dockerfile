@@ -38,3 +38,6 @@ ENV PATH="$PATH:/home/${USER_NAME}/.local/bin"
 
 # poetryのインストール
 RUN curl -sSL https://install.python-poetry.org | python -
+
+# プロジェクト直下に.venvを作る
+RUN poetry config virtualenvs.in-project true
